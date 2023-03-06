@@ -1,12 +1,11 @@
 import sys
+import math
 
 def main():
 
     k, input_file_name = getArgs()
 
     data = getDataFromFile(input_file_name)
-
-    clusters = [[0,0] for i in range(k)]
 
 def getArgs():
     # check if the right number of arguments
@@ -54,6 +53,10 @@ def getDataFromFile(input_file_name):
         input_file.close()
 
     return data
+
+def get_distance(point_1,point_2):
+    return math.sqrt(sum(map(lambda x: (x[0]-x[1]) ** 2, zip(point_1,point_2))))
+
 
 if __name__ == '__main__':
     main()
