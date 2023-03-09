@@ -18,9 +18,10 @@ Note that the input file needs to be a text file, and the format of the file
 should be two numbers per line separated by a space.
 
 Example Input File:
-10 11
-5 3
-213 5
+
+10 11<br/>
+5 3<br/>
+213 5<br/>
 15 23
 
 ### Output
@@ -30,7 +31,8 @@ is the cluster that the point was assigned to. the data is saved to a file
 called output.txt
 
 Example Output File:
-10 11 0
-5 3 1
-213 5 3
+
+10 11 0<br/>
+5 3 1<br/>
+213 5 3<br/>
 15 23
